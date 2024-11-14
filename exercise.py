@@ -38,4 +38,3 @@ def main(duel_res: list[tuple[int, str, bool]]) -> str:
 
 # Тестовый вызов функции main.
 print(main(TEST_DATA))
-print(1)
