@@ -4,6 +4,7 @@ from graphic_arts.start_game_banner import run_screensaver
 
 
 def attack(char_name, char_class):
+    """Return taken attack."""
     if char_class == 'warrior':
         return (f'{char_name} нанёс урон противнику равный '
                 f'{5 + randint(3, 5)}')
@@ -16,6 +17,7 @@ def attack(char_name, char_class):
 
 
 def defence(char_name, char_class):
+    """Return blocked dameged."""
     if char_class == 'warrior':
         return (f'{char_name} блокировал {10 + randint(5, 10)} урона')
     if char_class == 'mage':
@@ -25,6 +27,7 @@ def defence(char_name, char_class):
 
 
 def special(char_name, char_class):
+    """Applying special skill."""
     if char_class == 'warrior':
         return (f'{char_name} применил специальное умение «Выносливость '
                 f'{80 + 25}»')
@@ -35,6 +38,7 @@ def special(char_name, char_class):
 
 
 def start_training(char_name, char_class):
+    """Start tranning."""
     if char_class == 'warrior':
         print(f'{char_name}, ты Воитель — отличный боец ближнего боя.')
     if char_class == 'mage':
@@ -59,6 +63,7 @@ def start_training(char_name, char_class):
 
 
 def choice_char_class():
+    """Choose class."""
     approve_choice = None
     char_class = None
     while approve_choice != 'y':
